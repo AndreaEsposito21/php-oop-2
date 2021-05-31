@@ -2,7 +2,7 @@
     class Game {
         public $titolo;
 
-        public $genere
+        public $genere;
 
         public $editore;
 
@@ -12,9 +12,11 @@
 
         public $pegi = 16;
 
-        public function __construct($_titolo, $_genere) {
+        public function __construct($_titolo, $_genere, $_editore, $_sviluppatore) {
             $this->titolo = $_titolo;
             $this->genere = $_genere;
+            $this->editore = $_editore;
+            $this->sviluppatore = $_sviluppatore;
         }
 
         public function getInfoData() {
